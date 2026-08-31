@@ -8,6 +8,10 @@
 Changes
 =======
 
+Version v11.0.4 (released 2026-08-31)
+
+- fix(jobs): handle null args on job creation
+
 Version v11.0.3 (released 2026-08-05)
 
 - fix: subtasks_closed db-side default
