@@ -250,7 +250,7 @@ class JobSchema(Schema, FieldPermissionsMixin):
     def args_adapter(self, obj, many, **kwargs):
         """Adapt UI schema args to the service schema."""
         if "args" in obj:
-            args = obj.pop("args")
+            args = obj.pop("args") or {}
             obj["run_args"] = {
                 **args,
             }
